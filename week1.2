@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Main {
+    public static int findMedian(int[] arr) {
+        Arrays.sort(arr);
+        int n = arr.length;
+        return arr[n / 2];   // middle element
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {0, 1, 2, 4, 6, 5, 3};
+        System.out.println(findMedian(arr)); // Output: 3
+    }
+}
